@@ -12,7 +12,7 @@ const Loader = () => {
     <div className="w-screen h-screen flex justify-center items-center">
       <h1
         id="loaderText"
-        className="text-6xl font-semibold overflow-hidden pt-10 mt-[-10]"
+        className="text-6xl font-semibold overflow-hidden pt-10 mt-[-2.5rem]"
       >
         {"Abhishek.Codes".split("").map((item, index) => {
           return (
