@@ -1,13 +1,35 @@
+"use client";
+import { useRef } from "react";
 import Image from "next/image";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Loader from "@/components/Loader";
+
+gsap.registerPlugin(useGSAP);
 
 export default function Home() {
+  const container = useRef();
+  // useGSAP(
+  //   () => {
+  //     gsap.to(".logo", {
+  //       x: 100,
+  //       rotation: 360,
+  //       scrollTrigger: {
+  //         trigger: ".logo",
+  //         start: "bottom bottom",
+  //         end: "top 20%",
+  //         scrub: 0.5,
+  //         markers: true,
+  //       },
+  //     });
+  //   },
+  //   { scope: container }
+  // );
+
   return (
-    <main className="flex min-h-screen w-screen overflow-x-hidden flex-col items-center p-6 ">
-      <div className="text-2xl mb-40 font-bold">Abhishek Codes</div>
-      <Image src="/construction.jpg" width={500} height={500} />
-      <div className="text-lg mt-[-30px] text-gray-600 font-semibold">
-        Site is under Construction!
-      </div>
+    <main className="w-screen min-h-screen" ref={container}>
+      <Loader />
     </main>
   );
 }
