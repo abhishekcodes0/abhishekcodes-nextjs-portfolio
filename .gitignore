@@ -42,3 +42,6 @@ firebase.json
 # Firebase hosting files
 **/firebase.json
 **/.firebaserc
+
+
+.env
