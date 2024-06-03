@@ -40,7 +40,7 @@ const page = async () => {
     <div className="w-full h-full flex gap-8 p-8">
       {blogs.map((blog) => {
         return (
-          <Link href={`/blog/${blog.attributes.Slug}`}>
+          <Link href={`/blog/${blog.attributes.Slug}`} key={blog.id}>
             <div
               className="w-[200px] h-[200px] bg-gray-200 flex justify-center items-center cursor-pointer hover:bg-gray-300"
               key={blog.id}

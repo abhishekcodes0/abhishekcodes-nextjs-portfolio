@@ -56,7 +56,7 @@ export default function Home(props) {
           transition={{ delay: 4, ease: "easeInOut" }}
           className="blob blob-1 text-white text-xs"
         >
-          Hi, that's me
+          {"Hi, that's me"}
         </motion.div>
         <motion.div
           initial={{ scale: 0.5, opacity: 0 }}

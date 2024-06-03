@@ -27,7 +27,7 @@ const Paragraph = ({ value }) => {
 
 const Word = ({ children, range, progress }) => {
   const opacity = useTransform(progress, range, [0, 1]);
-  console.log(range, progress);
+  //   console.log(range, progress);
   return (
     <span className="mr-[12px] mt-[12px] relative">
       <span className="absolute opacity-[0.2]">{children}</span>
