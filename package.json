@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env APP_ENV=development next dev",
+    "prod": "cross-env APP_ENV=production next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -12,6 +13,7 @@
     "@gsap/react": "2.1.1",
     "axios": "1.7.2",
     "clsx": "2.1.1",
+    "cross-env": "7.0.3",
     "framer-motion": "11.1.9",
     "gsap": "3.12.5",
     "gsap-trial": "3.12.5",

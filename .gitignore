@@ -44,5 +44,5 @@ firebase.json
 **/.firebaserc
 
 
-.env
+.env*
 package-lock.json

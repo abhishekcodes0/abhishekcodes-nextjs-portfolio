@@ -1,6 +1,6 @@
-let apiUrl = "http://13.201.75.224:5000";
+let apiUrl = "http://localhost:5000";
 
-if (process.env.NODE_ENV == "production") {
+if (process.env.APP_ENV == "production") {
   apiUrl = "http://13.201.75.224:5000";
 }
 
