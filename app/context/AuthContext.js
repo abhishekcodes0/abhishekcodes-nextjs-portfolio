@@ -20,7 +20,6 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = (userData) => {
-    console.log("userdata", userData);
     axios.post(`${apiUrl}/api/auth/signin`, userData).then((res) => {
       if (res?.data?._id) {
         setUser(res.data);

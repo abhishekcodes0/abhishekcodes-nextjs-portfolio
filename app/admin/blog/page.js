@@ -8,15 +8,6 @@ import axios from "axios";
 import { apiUrl } from "@/utils/config";
 import BlogFields from "@/app/components/BlogFields";
 
-// export async function generateStaticParams() {
-//   console.log("here");
-//   const posts = await axios.get(`${apiUrl}/api/blog/get`);
-
-//   return posts.data.map((post) => ({
-//     slug: post.slug,
-//   }));
-// }
-
 const page = (props) => {
   const [editorState, setEditorState] = useState(() =>
     EditorState.createEmpty()
@@ -33,11 +24,9 @@ const page = (props) => {
   });
 
   useEffect(() => {
-    console.log("pirop", props);
     axios
       .get(`${apiUrl}/api/blog/get/${props.searchParams.slug}`)
       .then((res) => {
-        console.log("bhi", res);
         if (res.data?._id) {
           setBlogState(res.data);
           let contentState = stateFromHTML(res.data.content);
@@ -90,7 +79,6 @@ const page = (props) => {
   };
 
   const publishBlog = () => {
-    console.log("cksjdga");
     let updatePayload = { status: "published" };
     axios
       .put(`${apiUrl}/api/blog/update/${blogState.slug}`, updatePayload, {

@@ -3,23 +3,15 @@ import Link from "next/link";
 
 import axios from "axios";
 import { apiUrl } from "@/utils/config";
+import { transformDate } from "@/utils/miscFunctions";
 
 const fetchBlogs = async (params) => {
   const response = await axios.get(`${apiUrl}/api/blog/get/all`);
   return response.data;
 };
 
-const transformDate = (isoDate) => {
-  const date = new Date(isoDate);
-
-  const options = { day: "numeric", month: "long", year: "numeric" };
-  const formattedDate = date.toLocaleDateString("en-GB", options);
-  return formattedDate;
-};
-
 const Dashboard = async () => {
   const blogs = await fetchBlogs();
-  console.log(blogs);
   return (
     <ProtectedRoute>
       <section className="mt-8 px-24 mt-16">
@@ -39,7 +31,7 @@ const Dashboard = async () => {
               {blogs?.map((blog) => {
                 return (
                   <div
-                    className="w-full rounded flex justify-center flex-col"
+                    className="w-full rounded flex justify-start flex-col"
                     key={blog._id}
                   >
                     <img

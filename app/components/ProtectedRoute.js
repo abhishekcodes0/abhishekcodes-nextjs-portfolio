@@ -6,7 +6,6 @@ import { useEffect } from "react";
 const ProtectedRoute = ({ children }) => {
   const { user } = useAuth();
   const router = useRouter();
-  console.log("user", user);
   useEffect(() => {
     if (!user) {
       // Redirect to login if not authenticated

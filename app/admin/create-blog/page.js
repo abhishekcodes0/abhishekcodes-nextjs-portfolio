@@ -48,7 +48,6 @@ const page = () => {
         },
       })
       .then((res) => {
-        console.log("blogres", res);
         if (res.data._id) {
           setIsBlogSaved(true);
         }

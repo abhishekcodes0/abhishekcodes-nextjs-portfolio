@@ -2,28 +2,17 @@ import Link from "next/link";
 
 import axios from "axios";
 import { apiUrl } from "@/utils/config";
+import { transformDate } from "@/utils/miscFunctions";
 
 const fetchBlogs = async (params) => {
   const response = await axios.get(`${apiUrl}/api/blog/get`);
   return response.data;
 };
 
-const transformDate = (isoDate) => {
-  const date = new Date(isoDate);
-
-  const options = { day: "numeric", month: "long", year: "numeric" };
-  const formattedDate = date.toLocaleDateString("en-GB", options);
-  return formattedDate;
-};
-
 const page = async () => {
   //   const featuredBlogs = await fetchBlogs(`filters[IsFeatured][$eq]=true`);
   const blogs = await fetchBlogs();
-  console.log("blogs", blogs);
   const featuredBlog = blogs.filter((itr) => itr.isFeatured)[0] ?? {};
-
-  console.log("===blogs", blogs);
-  console.log("===featuredblogs", featuredBlog);
 
   return (
     <div className="flex flex-col px-24 mt-16">
@@ -64,7 +53,7 @@ const page = async () => {
             {blogs?.map((blog) => {
               return (
                 <div
-                  className="w-full rounded flex justify-center flex-col cursor-pointer"
+                  className="w-full rounded flex justify-start flex-col cursor-pointer"
                   key={blog._id}
                 >
                   <img

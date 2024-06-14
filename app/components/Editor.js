@@ -33,13 +33,6 @@ const RichTextEditor = ({ editorState, setEditorState }) => {
           },
         }}
       />
-      {/* <button
-        onClick={() =>
-          console.log(convertToRaw(editorState.getCurrentContent()))
-        }
-      >
-        Log Content State
-      </button> */}
     </div>
   );
 };
