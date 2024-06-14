@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useAuth } from "@/app/context/AuthContext";
 
-const page = () => {
+const Page = () => {
   const { login } = useAuth();
   const [userDetails, setUserDetails] = useState({
     email: undefined,
@@ -91,4 +91,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

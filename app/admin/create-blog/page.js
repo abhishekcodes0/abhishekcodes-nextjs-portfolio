@@ -7,7 +7,7 @@ import axios from "axios";
 import { apiUrl } from "@/utils/config";
 import BlogFields from "@/app/components/BlogFields";
 
-const page = () => {
+const Page = () => {
   const [isFeatured, setIsFeatured] = useState(false);
   const [editorState, setEditorState] = useState(() =>
     EditorState.createEmpty()
@@ -105,4 +105,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

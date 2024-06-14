@@ -89,32 +89,7 @@ const page = async (props) => {
         <p className="mt-2 text-lg">{blog.summary}</p>
       </header>
       <div className="flex">
-        <div>
-          <div>
-            <div class="... sticky top-0">A</div>
-            <div>
-              <div>
-                <img src="..." />
-                <p>Abigail Davis</p>
-              </div>
-
-              <div>
-                <img src="..." />
-                <p>Andrew Carter</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="sticky top-0">B</div>
-            <div>
-              <div>
-                <img src="..." />
-                <p>Benjamin Hughes</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <aside className="w-1/5 pr-4 sticky top-0 h-[300px] p-4">
+        <aside className="w-1/5 pr-4 sticky top-0 h-[300px] p-4">
           <nav className="sticky top-0">
             <h2 className="text-2xl font-semibold mb-4">Table of Contents</h2>
             <ul className="list-disc list-inside">
@@ -140,25 +115,13 @@ const page = async (props) => {
               </li>
             </ul>
           </nav>
-        </aside> */}
+        </aside>
         <article className="w-4/5 p-4 pr-24">
           <div dangerouslySetInnerHTML={{ __html: blog.content }} />
           <div dangerouslySetInnerHTML={{ __html: blog.content }} />
         </article>
       </div>
     </div>
-  );
-  return (
-    <article className="p-8 w-full flex flex-col p-24">
-      <h1 className="text-4xl mb-4">{blog.title}</h1>
-      {/* <Image
-            src={blog.image}
-            alt={blog.title}
-            width={600}
-            height={400}
-          /> */}
-      <div dangerouslySetInnerHTML={{ __html: blog.content }} />
-    </article>
   );
 };
 

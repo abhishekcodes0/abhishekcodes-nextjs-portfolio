@@ -8,7 +8,7 @@ import axios from "axios";
 import { apiUrl } from "@/utils/config";
 import BlogFields from "@/app/components/BlogFields";
 
-const page = (props) => {
+const Page = (props) => {
   const [editorState, setEditorState] = useState(() =>
     EditorState.createEmpty()
   );
@@ -131,4 +131,4 @@ const page = (props) => {
   );
 };
 
-export default page;
+export default Page;
