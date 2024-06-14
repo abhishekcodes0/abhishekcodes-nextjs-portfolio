@@ -46,4 +46,4 @@ firebase.json
 
 .env*
 package-lock.json
-hosting.*
+.firebase/
