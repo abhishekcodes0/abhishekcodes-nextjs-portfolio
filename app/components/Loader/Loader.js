@@ -5,17 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { opacity, slideUp } from "./anim";
 import { bebas } from "@/app/fonts";
 
-const words = [
-  "Hello",
-  "Bonjour",
-  "Ciao",
-  "Olà",
-  "やあ",
-  "Hallå",
-  "Guten tag",
-  "Hallo",
-];
-
 export default function Index() {
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const [loading, setLoading] = useState(true);
