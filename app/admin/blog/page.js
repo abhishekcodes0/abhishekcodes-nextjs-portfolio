@@ -68,7 +68,7 @@ const Page = (props) => {
     axios
       .put(`${apiUrl}/api/blog/update/${blogState.slug}`, updatePayload, {
         headers: {
-          Authorization: localStorage.getItem("access_token"),
+          Authorization: localStorage?.getItem("access_token"),
         },
       })
       .then((res) => {
@@ -83,7 +83,7 @@ const Page = (props) => {
     axios
       .put(`${apiUrl}/api/blog/update/${blogState.slug}`, updatePayload, {
         headers: {
-          Authorization: localStorage.getItem("access_token"),
+          Authorization: localStorage?.getItem("access_token"),
         },
       })
       .then((res) => {

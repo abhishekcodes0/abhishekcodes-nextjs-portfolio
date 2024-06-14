@@ -17,7 +17,7 @@ export default function Home(props) {
       <Loader />
 
       {/* hero section */}
-      <section className="w-screen h-screen relative">
+      <section className="w-screen h-screen-48px relative">
         <div className="w-full h-full flex flex-col items-center justify-center relative">
           <motion.h1
             initial={{ scale: 0.5, y: 300, opacity: 0 }}
@@ -41,10 +41,10 @@ export default function Home(props) {
           </motion.h2>
 
           <motion.img
-            initial={{ scale: 1.5 }}
-            animate={{ scale: 1 }}
-            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-            className="absolute top-3/4 w-10"
+            initial={{ scale: 1, opacity: 1 }}
+            animate={{ scale: 1.2, opacity: 0.5 }}
+            transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
+            className="absolute bottom-20 left-1/2 translate-x-1/2 w-10"
             src="/scroll-icon.png"
           />
         </div>

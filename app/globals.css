@@ -19,9 +19,13 @@ html,
 body {
   width: 100vw;
   min-height: 100vh;
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
+  scrollbar-width: none; /* Hide scrollbar */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 *,*::before,*::after {
   box-sizing: border-box;

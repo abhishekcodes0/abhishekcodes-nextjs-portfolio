@@ -12,10 +12,10 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     // Replace with your authentication logic
-    const access_token = localStorage.getItem("access_token");
+    const access_token = localStorage?.getItem("access_token");
     if (access_token) {
       // Validate token and set user
-      setUser(localStorage.getItem("user"));
+      setUser(localStorage?.getItem("user"));
     }
   }, []);
 
@@ -23,8 +23,8 @@ export const AuthProvider = ({ children }) => {
     axios.post(`${apiUrl}/api/auth/signin`, userData).then((res) => {
       if (res?.data?._id) {
         setUser(res.data);
-        localStorage.setItem("access_token", "Bearer " + res.data.token);
-        localStorage.setItem("user", JSON.stringify(res.data));
+        localStorage?.setItem("access_token", "Bearer " + res.data.token);
+        localStorage?.setItem("user", JSON.stringify(res.data));
 
         router.push("/admin/dashboard"); // Redirect to a protected page
       }
@@ -33,7 +33,7 @@ export const AuthProvider = ({ children }) => {
 
   const logout = () => {
     // Replace with your logout logic
-    localStorage.removeItem("access_token");
+    localStorage?.removeItem("access_token");
     setUser(null);
     router.push("/admin/login"); // Redirect to login page
   };

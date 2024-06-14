@@ -88,9 +88,9 @@ const page = async (props) => {
         </p>
         <p className="mt-2 text-lg">{blog.summary}</p>
       </header>
-      <div className="flex">
-        <aside className="w-1/5 pr-4 sticky top-0 h-[300px] p-4">
-          <nav className="sticky top-0">
+      <div className="flex relative">
+        <aside className="w-1/5 pr-4 h-100 p-4">
+          <nav className="h-[200px] sticky top-10">
             <h2 className="text-2xl font-semibold mb-4">Table of Contents</h2>
             <ul className="list-disc list-inside">
               <li>
