@@ -1,9 +1,4 @@
 "use client";
-import { useRef, useState, useEffect } from "react";
-import Image from "next/image";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Loader from "@/app/components/Loader/Loader";
 import { motion } from "framer-motion";
 import { bebas } from "./fonts";
@@ -39,15 +34,21 @@ export default function Home(props) {
             Combining Creativity and Technical Skill
             <br /> to Develop Impactful Digital Solutions for Over 4 Years
           </motion.h2>
-
+        </div>
+        <motion.div
+          className="flex -mt-32 justify-center"
+          initial={{ scale: 0.5, y: 50, opacity: 0 }}
+          animate={{ scale: 1, y: 0, opacity: 100 }}
+          transition={{ delay: 3.6, ease: "easeInOut" }}
+        >
           <motion.img
             initial={{ scale: 1, opacity: 1 }}
             animate={{ scale: 1.2, opacity: 0.5 }}
             transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
-            className="absolute bottom-20 left-1/2 translate-x-1/2 w-10"
+            className="w-10"
             src="/scroll-icon.png"
           />
-        </div>
+        </motion.div>
 
         {/* floating blobs */}
         <motion.div

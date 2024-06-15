@@ -4,6 +4,7 @@ const nextConfig = {
     unoptimized: true,
   },
   output: "export",
+  exportTrailingSlash: true,
 };
 
 export default nextConfig;

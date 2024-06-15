@@ -48,11 +48,8 @@ const page = async () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {blogs?.map((blog) => {
               return (
-                <Link href={`/blog/${blog.slug}`}>
-                  <div
-                    className="w-full rounded flex justify-start flex-col cursor-pointer"
-                    key={blog._id}
-                  >
+                <Link key={blog._id} href={`/blog/${blog.slug}`}>
+                  <div className="w-full rounded flex justify-start flex-col cursor-pointer">
                     <img
                       className="w-full h-[200px] object-cover"
                       src={blog.thumbnail}
