@@ -1,7 +1,6 @@
 import "./globals.css";
 import NavBar from "./components/NavBar";
 import { bebas, montserrat } from "./fonts.js";
-import { AuthProvider } from "./context/AuthContext";
 
 export const metadata = {
   title: "Abhishek Codes",
@@ -13,10 +12,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <AuthProvider>
-          <NavBar />
-          {children}
-        </AuthProvider>
+        <NavBar />
+        {children}
       </body>
     </html>
   );

@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 import { bebas } from "./fonts";
 import Paragraph from "./components/Paragraph/Paragraph";
 
-// gsap.registerPlugin(useGSAP);
-
 export default function Home(props) {
   return (
     <main className="relative flex flex-col">
