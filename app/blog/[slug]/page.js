@@ -3,67 +3,72 @@ import Link from "next/link";
 import { apiUrl } from "@/utils/config";
 import { transformDate } from "@/utils/miscFunctions";
 
-let postData = {
-  title: "test-title",
-  description: "test-description",
-  keywords: ["abc", "bcd"],
-  image: "test",
-  slug: "test",
-  content: "test",
-};
+export async function generateMetadata({ params, searchParams }, parent) {
+  // fetch data
+  const post = await axios.get(`${apiUrl}/api/blog/get/${params.slug}`);
+  const postData = post.data;
+  // optionally access and extend (rather than replace) parent metadata
+  // const previousImages = (await parent).openGraph?.images || [];
 
-export const metadata = {
-  title: postData.title,
-  description: postData.description,
-  keywords: postData.keywords.join(", "),
+  // return {
+  //   title: product.title,
   //   openGraph: {
-  //     title: postData.title,
-  //     description: postData.description,
-  //     images: [
-  //       {
-  //         url: postData.image,
-  //         alt: postData.title,
-  //       },
-  //     ],
-  //     url: `https://abhishekcodes.com/blog/${postData.slug}`,
+  //     images: ['/some-specific-page-image.jpg', ...previousImages],
   //   },
-  //   twitter: {
-  //     card: "summary_large_image",
-  //     title: postData.title,
-  //     description: postData.description,
-  //     image: postData.image,
-  //   },
-  //   alternates: {
-  //     canonical: `https://abhishekcodes.com/blog/${postData.slug}`,
-  //   },
-  other: {
-    "application/ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      headline: postData.title,
-      description: postData.description,
-      image: postData.image,
-      author: {
-        "@type": "Person",
-        name: postData.author,
-      },
-      publisher: {
-        "@type": "Organization",
-        name: "Abhishek Codes",
-        logo: {
-          "@type": "ImageObject",
-          url: "https://abhishekcodes.com/logo.png",
+  // }
+  return {
+    title: postData.title,
+    description: postData.description,
+    // keywords: postData.keywords.join(", "),
+    //   openGraph: {
+    //     title: postData.title,
+    //     description: postData.description,
+    //     images: [
+    //       {
+    //         url: postData.image,
+    //         alt: postData.title,
+    //       },
+    //     ],
+    //     url: `https://abhishekcodes.com/blog/${postData.slug}`,
+    //   },
+    //   twitter: {
+    //     card: "summary_large_image",
+    //     title: postData.title,
+    //     description: postData.description,
+    //     image: postData.image,
+    //   },
+    //   alternates: {
+    //     canonical: `https://abhishekcodes.com/blog/${postData.slug}`,
+    //   },
+    other: {
+      "application/ld+json": JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: postData.title,
+        description: postData.description,
+        image: postData.image,
+        author: {
+          "@type": "Person",
+          name: postData.author,
         },
-      },
-      datePublished: postData.datePublished,
-      dateModified: postData.dateModified,
-      mainEntityOfPage: {
-        "@type": "WebPage",
-        "@id": `https://abhishekcodes.com/blog/${postData.slug}`,
-      },
-    }),
-  },
-};
+        publisher: {
+          "@type": "Organization",
+          name: "Abhishek Codes",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://abhishekcodes.com/logo.png",
+          },
+        },
+        datePublished: postData.datePublished,
+        dateModified: postData.dateModified,
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": `https://abhishekcodes.com/blog/${postData.slug}`,
+        },
+      }),
+    },
+  };
+}
 
 // Return a list of `params` to populate the [slug] dynamic segment
 export async function generateStaticParams() {
@@ -187,7 +192,6 @@ const page = async (props) => {
           </nav>
         </aside>
         <article className="w-4/5 p-4 pr-24">
-          <div dangerouslySetInnerHTML={{ __html: blog.content }} />
           <div dangerouslySetInnerHTML={{ __html: blog.content }} />
         </article>
       </div>
