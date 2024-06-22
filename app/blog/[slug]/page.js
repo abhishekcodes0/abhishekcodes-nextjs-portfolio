@@ -186,12 +186,8 @@ const page = async (props) => {
             <h2 className="text-2xl font-semibold mb-4">Table of Contents</h2>
             <ul className="list-disc list-inside">
               {extractedH2Tags.map((tag) => (
-                <li>
-                  <a
-                    key={tag.id}
-                    href={`#${tag.id}`}
-                    className=" hover:underline"
-                  >
+                <li key={tag.id}>
+                  <a href={`#${tag.id}`} className=" hover:underline">
                     {tag.text}
                   </a>
                 </li>
