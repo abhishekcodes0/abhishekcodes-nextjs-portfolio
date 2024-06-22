@@ -103,9 +103,6 @@ body::-webkit-scrollbar {
   font-weight: 600;
   margin-top: 16px;
 }
-.blog-content > ul {
-  list-style: disc;
-}
 .blog-content > ul > li {
   margin-left: 30px;
   margin-top: 20px;

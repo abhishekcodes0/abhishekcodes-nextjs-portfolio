@@ -183,11 +183,11 @@ const page = async (props) => {
       <div className="flex relative">
         <aside className="w-1/5 pr-4 h-100 p-4">
           <nav className="h-[200px] sticky top-10">
-            <h2 className="text-2xl font-semibold mb-4">Table of Contents</h2>
-            <ul className="list-disc list-inside">
+            <h2 className="text-2xl font-bold mb-4">Table of Contents</h2>
+            <ul className="list-disc ml-6">
               {extractedH2Tags.map((tag) => (
-                <li key={tag.id}>
-                  <a href={`#${tag.id}`} className=" hover:underline">
+                <li key={tag.id} className="font-semibold">
+                  <a href={`#${tag.id}`} className="m-1 block hover:underline">
                     {tag.text}
                   </a>
                 </li>
