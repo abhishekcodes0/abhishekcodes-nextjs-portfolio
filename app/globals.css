@@ -27,7 +27,9 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -88,6 +90,45 @@ body::-webkit-scrollbar {
   background: url("/react.png") no-repeat 50% 50%;
   background-size: cover;
   animation-delay: 1s;
+}
+.blog-content {
+  font-size: 20px;
+  color: #242424;
+}
+.blog-content > p {
+  margin-top: 8px;
+}
+.blog-content > h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+.blog-content > ul {
+  list-style: disc;
+}
+.blog-content > ul > li {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+
+.ql-syntax {
+  margin-top: 8px;
+  border-radius: 0.25rem;
+  background: #282c34;
+  color: #abb2bf;
+  border: 1px solid #34363b;
+  border-left: 3px solid #34363b;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
 }
 
 @layer utilities {

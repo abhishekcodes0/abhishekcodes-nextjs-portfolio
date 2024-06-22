@@ -76,7 +76,22 @@ export async function generateStaticParams() {
 
   return posts.data.map((post) => ({
     slug: post.slug,
+    fallback: "blocking",
   }));
+}
+
+function extractH2Tags(htmlString) {
+  const h2Regex = /<h2 id="([^"]*)">([^<]*)<\/h2>/g;
+  const h2Tags = [];
+
+  let match;
+  while ((match = h2Regex.exec(htmlString)) !== null) {
+    const id = match[1];
+    const text = match[2];
+    h2Tags.push({ id, text });
+  }
+
+  return h2Tags;
 }
 
 const page = async (props) => {
@@ -84,6 +99,8 @@ const page = async (props) => {
     `${apiUrl}/api/blog/get/${props.params.slug}`
   );
   const blog = blogRes.data;
+
+  const extractedH2Tags = extractH2Tags(blog.content);
 
   return (
     <div className="container mt-16 mx-auto px-4">
@@ -156,7 +173,7 @@ const page = async (props) => {
         </ol>
       </nav>
 
-      <header className="my-8 border-2 border-blue-200 p-4 rounded">
+      <header className="my-8 border-2 border-blue-200 bg-blue-100 p-4 rounded">
         <h1 className="text-4xl font-bold">{blog.title}</h1>
         <p className="text-gray-600">
           Published on {transformDate(blog.createdAt)}
@@ -168,31 +185,28 @@ const page = async (props) => {
           <nav className="h-[200px] sticky top-10">
             <h2 className="text-2xl font-semibold mb-4">Table of Contents</h2>
             <ul className="list-disc list-inside">
-              <li>
-                <a href="#section1" className="text-blue-500 hover:underline">
-                  Section 1
-                </a>
-              </li>
-              <li>
-                <a href="#section2" className="text-blue-500 hover:underline">
-                  Section 2
-                </a>
-              </li>
-              <li>
-                <a href="#section3" className="text-blue-500 hover:underline">
-                  Section 3
-                </a>
-              </li>
-              <li>
-                <a href="#section4" className="text-blue-500 hover:underline">
-                  Section 4
-                </a>
-              </li>
+              {extractedH2Tags.map((tag) => (
+                <li>
+                  <a
+                    key={tag.id}
+                    href={`#${tag.id}`}
+                    className=" hover:underline"
+                  >
+                    {tag.text}
+                  </a>
+                </li>
+              ))}
             </ul>
           </nav>
         </aside>
-        <article className="w-4/5 p-4 pr-24">
-          <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+        <article className="w-4/5 p-4 pr-24 w-[868px]">
+          <img src={blog.thumbnail} className="mb-8 rounded" />
+          <div
+            className="blog-content text-wrap"
+            dangerouslySetInnerHTML={{
+              __html: blog.content,
+            }}
+          />
         </article>
       </div>
     </div>
