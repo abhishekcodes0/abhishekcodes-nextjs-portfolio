@@ -51,7 +51,7 @@ const page = async () => {
                 <Link key={blog._id} href={`/blog/${blog.slug}`}>
                   <div className="w-full rounded flex justify-start flex-col cursor-pointer">
                     <img
-                      className="w-full h-[200px] object-cover"
+                      className="w-full h-[220px] object-cover"
                       src={blog.thumbnail}
                     />
 

@@ -97,15 +97,28 @@ body::-webkit-scrollbar {
 }
 .blog-content > p {
   margin-top: 8px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
+  /* letter-spacing: .03em; */
 }
 .blog-content > h2 {
   font-size: 24px;
   font-weight: 600;
   margin-top: 16px;
 }
+.blog-content>ul{
+  list-style: disc;
+}
 .blog-content > ul > li {
   margin-left: 30px;
   margin-top: 20px;
+}
+.blog-content>p>a{
+  font-size: 16px;
+  font-weight: bold;
+  color: #3030d8;
 }
 
 
