@@ -14,26 +14,28 @@ const page = async () => {
   const featuredBlog = blogs.filter((itr) => itr.isFeatured)[0] ?? {};
 
   return (
-    <div className="flex flex-col px-24 mt-16">
+    <div className="flex flex-col px-2 md:px-4 lg:px-24 mt-16">
       <section>
         <h2 className="font-semibold mb-2">Featured Blogs</h2>
         <Link href={`/blog/${featuredBlog.slug}`}>
-          <div className="h-80 flex justify-center gap-8">
-            <div className="w-1/2 rounded">
+          <div className="h-auto lg:h-80 flex flex-col lg:flex-row justify-center lg:gap-8">
+            <div className="w-full lg:w-1/2 rounded">
               <img
                 className="w-full h-full object-cover"
                 src={featuredBlog.thumbnail}
               />
             </div>
 
-            <div className="w-1/2 py-4 flex flex-col">
-              <div className="text-sm text-gray-400 mb-1">
+            <div className="w-full lg:w-1/2 lg:py-4 flex flex-col">
+              <div className="text-sm text-gray-400 mb-1 mt-2 lg:mt-0">
                 {transformDate(featuredBlog.createdAt)}
               </div>
-              <h3 className="text-2xl font-semibold mb-4 w-9/12 text-wrap">
+              <h3 className="text-2xl font-semibold mb-4 w-full lg:w-9/12 text-wrap">
                 {featuredBlog.title}
               </h3>
-              <p className="w-9/12 text-wrap">{featuredBlog.summary}</p>
+              <p className="w-full lg:w-9/12 text-wrap">
+                {featuredBlog.summary}
+              </p>
 
               <p className="mt-8 text-blue-600">Read More</p>
             </div>
@@ -45,7 +47,7 @@ const page = async () => {
         <h2 className="font-semibold mb-2">Recent Blogs</h2>
 
         <div className="mb-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {blogs?.map((blog) => {
               return (
                 <Link key={blog._id} href={`/blog/${blog.slug}`}>

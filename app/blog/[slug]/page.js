@@ -180,9 +180,9 @@ const page = async (props) => {
         </p>
         <p className="mt-2 text-lg">{blog.summary}</p>
       </header>
-      <div className="flex relative">
-        <aside className="w-1/5 pr-4 h-100 p-4">
-          <nav className="h-[200px] sticky top-10">
+      <div className="flex flex-col lg:flex-row relative ">
+        <aside className="w-ful lg:w-1/5 pr-4 h-100 p-4">
+          <nav className="h-auto lg:h-[200px] lg:sticky lg:top-10">
             <h2 className="text-2xl font-bold mb-4">Table of Contents</h2>
             <ul className="list-disc ml-6">
               {extractedH2Tags.map((tag) => (
@@ -195,7 +195,7 @@ const page = async (props) => {
             </ul>
           </nav>
         </aside>
-        <article className="w-4/5 p-4 pr-24 w-[868px]">
+        <article className="w-full lg:w-4/5 p-2 lg:p-4 lg:pr-24 lg:w-[868px]">
           <img src={blog.thumbnail} className="mb-8 rounded" />
           <div
             className="blog-content text-wrap"
