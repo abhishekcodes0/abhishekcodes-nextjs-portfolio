@@ -198,7 +198,7 @@ const page = async (props) => {
         <article className="w-full lg:w-4/5 p-2 lg:p-4 lg:pr-24 lg:w-[868px]">
           <img src={blog.thumbnail} className="mb-8 rounded" />
           <div
-            className="blog-content text-wrap"
+            className="blog-content text-wrap pb-16"
             dangerouslySetInnerHTML={{
               __html: blog.content,
             }}

@@ -42,6 +42,19 @@ body::-webkit-scrollbar {
   z-index: -9999;
 }
 
+.hero-gradient>svg{
+  width: 100vw;
+  height: 100vw;
+}
+
+@media (min-width: 1200px) {
+  /* Your CSS styles for extra large devices */
+  .hero-gradient>svg{
+    width: 60vw;
+    height: 60vw;
+  }
+}
+
 .blob {
   display: flex;
   justify-content: center;
@@ -91,6 +104,106 @@ body::-webkit-scrollbar {
   background-size: cover;
   animation-delay: 1s;
 }
+
+
+@media (max-width: 1024px) {
+  /* Your CSS styles for extra large devices */
+ .blob-1{
+  width: 300px;
+  height: 300px;
+  top:6%
+ }
+ .blob-2{
+  width: 150px;
+  height: 150px;
+  right:5%;
+  top:35%;
+ }
+ .blob-3{
+  width: 150px;
+  height: 150px;
+  top:70%;
+  left:5%
+ }
+}
+
+@media (max-width: 600px) {
+  /* Your CSS styles for extra large devices */
+ .blob-1{
+  width: 150px;
+  height: 150px;
+  top:6%
+ }
+ .blob-2{
+  width: 80px;
+  height: 80px;
+  right:0%;
+  top:37%;
+ }
+ .blob-3{
+  width: 100px;
+  height: 100px;
+  top:70%;
+  left:5%
+ }
+}
+
+
+.skills {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)
+}
+
+.skills div {
+  white-space: nowrap;
+  animation: scroll var(--time) linear infinite;
+  animation-delay: calc(var(--time)*-1);
+
+}
+
+.skills div:nth-child(2) {
+  animation: scroll2 var(--time) linear infinite;
+  animation-delay: calc(var(--time)/-2);
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(100%);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(-200%);
+  }
+}
+
+.skills div span {
+  display: inline-flex;
+  margin: 10px;
+  letter-spacing: 0.2em;
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.skills div span:hover {
+  background: #3fd2f9;
+  cursor: pointer;
+}
+
 .blog-content {
   font-size: 20px;
   color: #242424;
