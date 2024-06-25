@@ -12,8 +12,8 @@ const NavBar = () => {
         Abhishek Codes
       </Link>
       <div className="flex gap-4 text-xl pr-4">
-        <Link href="/about">About</Link>
-        <Link href="/work">Work</Link>
+        <Link href="#about">About</Link>
+        <Link href="#work">Work</Link>
         <Link href="/blog">Blog</Link>
       </div>
     </div>

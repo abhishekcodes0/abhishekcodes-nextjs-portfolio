@@ -4,7 +4,10 @@ import Paragraph from "./Paragraph/Paragraph";
 
 const About = () => {
   return (
-    <section className="w-screen min-h-screen p-4 md:p-48 bg-gray-100 flex flex-col justify-center items-center relative">
+    <section
+      className="w-screen min-h-screen p-4 md:p-48 bg-gray-100 flex flex-col justify-center items-center relative"
+      id="about"
+    >
       <div
         className={
           "text-center text-6xl font-bold mt-12 mb-12" + " " + bebas.className

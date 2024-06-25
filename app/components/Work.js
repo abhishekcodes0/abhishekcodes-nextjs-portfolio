@@ -14,7 +14,10 @@ let theme = "light";
 
 const Work = () => {
   return (
-    <section className="w-screen h-auto bg-gray-100 flex flex-col justify-center items-center relative">
+    <section
+      className="w-screen h-auto bg-gray-100 flex flex-col justify-center items-center relative"
+      id="work"
+    >
       <div
         className={
           "text-center text-6xl font-bold mt-12 mb-12" + " " + bebas.className
