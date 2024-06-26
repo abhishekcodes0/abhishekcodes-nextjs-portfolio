@@ -44,7 +44,6 @@ const Contact = () => {
     setErrors(errors);
     return valid;
   };
-  console.log(errors);
 
   const handleSubmit = (e) => {
     e.preventDefault();

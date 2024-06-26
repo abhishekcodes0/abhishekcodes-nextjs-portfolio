@@ -5,6 +5,9 @@ const nextConfig = {
   },
   output: "export",
   trailingSlash: true,
+  env: {
+    NEXT_APP_ENV: process.env.APP_ENV,
+  },
 };
 
 export default nextConfig;
