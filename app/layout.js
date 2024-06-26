@@ -17,12 +17,11 @@ export default function RootLayout({ children }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-TN30DD9SK8"
         />
-        <Script>
-          {` window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TN30DD9SK8');`}
+        <Script id="gtag">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TN30DD9SK8');`}
         </Script>
       </head>
       <body className={montserrat.className}>

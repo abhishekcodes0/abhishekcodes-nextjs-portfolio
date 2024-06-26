@@ -89,7 +89,7 @@ const Project = ({ title, description, tags, imageUrl }) => {
 
 const Projects = () => {
   return (
-    <section className="w-screen min-h-screen bg-white flex flex-col justify-center items-center pb-16">
+    <section className="w-screen min-h-screen bg-white flex flex-col items-center pb-16">
       <div
         className={
           "text-center text-6xl font-bold mt-12 mb-12" + " " + bebas.className

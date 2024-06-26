@@ -3,7 +3,7 @@ import { bebas } from "../fonts";
 
 const Skills = () => {
   return (
-    <section className="w-screen md:h-screen bg-white flex flex-col justify-center items-center">
+    <section className="w-screen md:h-screen bg-white flex flex-col items-center">
       <div
         className={
           "text-center text-6xl font-bold mt-12 mb-12" + " " + bebas.className
