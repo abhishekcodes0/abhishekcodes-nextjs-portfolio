@@ -15,6 +15,9 @@ module.exports = {
       height: {
         "screen-48px": "calc(100vh - 48px)",
       },
+      screens: {
+        mymobile: "480px",
+      },
     },
   },
   plugins: [],

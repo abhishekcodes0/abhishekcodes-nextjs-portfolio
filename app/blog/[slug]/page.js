@@ -105,7 +105,7 @@ const page = async (props) => {
   return (
     <div className="container mt-16 mx-auto px-4">
       <nav className="flex" aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+        <ol className="inline-flex items-center space-x-0 mymobile:space-x-1 md:space-x-2 rtl:space-x-reverse flex-wrap">
           <li className="inline-flex items-center">
             <Link
               href="/"
@@ -151,7 +151,7 @@ const page = async (props) => {
           <li aria-current="page">
             <div className="flex items-center">
               <svg
-                className="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+                className="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1 ml-0 md:ml-1"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

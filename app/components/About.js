@@ -5,7 +5,7 @@ import Paragraph from "./Paragraph/Paragraph";
 const About = () => {
   return (
     <section
-      className="w-screen min-h-screen p-4 md:p-48 md:pt-4 bg-gray-100 flex flex-col items-center relative"
+      className="w-screen min-h-screen p-4 pb-24 lg:p-48 md:pt-4 bg-gray-100 flex flex-col items-center relative"
       id="about"
     >
       <div

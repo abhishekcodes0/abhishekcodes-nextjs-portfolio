@@ -70,7 +70,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-screen h-screen bg-gray-100 flex flex-col items-center">
+    <section className="w-screen min-h-screen bg-gray-100 flex flex-col items-center">
       <div
         className={
           "text-center text-6xl font-bold mt-12 mb-12" + " " + bebas.className

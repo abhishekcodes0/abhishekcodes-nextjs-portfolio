@@ -6,7 +6,7 @@ const Paragraph = ({ value }) => {
   const elem = useRef(null);
   const { scrollYProgress } = useScroll({
     target: elem,
-    offset: ["start 0.9", "start 0.25"],
+    offset: ["start 0.9", "start 0"],
   });
 
   const words = value.split(" ").filter((itr) => itr != "");
