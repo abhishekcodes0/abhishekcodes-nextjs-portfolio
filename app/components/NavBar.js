@@ -24,7 +24,7 @@ const NavBar = () => {
           />
           Resume
         </Link>
-        <Link href="#about">About</Link>
+        {/* <Link href="#about">About</Link> */}
         <Link href="#work">Work</Link>
         <Link href="/blog">Blog</Link>
       </div>

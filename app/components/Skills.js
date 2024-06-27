@@ -16,158 +16,278 @@ const Skills = () => {
       <div className="w-5/6 mt-10 mb-32 md:my-auto">
         <div className="skills" style={{ "--time": "40s" }}>
           <div>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>Figma</span>
-            <span>MongoDB</span>
-            <span>NextJs</span>
-            <span>Figma</span>
-            <span>Express</span>
-            <span>Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
           </div>
           <div>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>Figma</span>
-            <span>MongoDB</span>
-            <span>NextJs</span>
-            <span>Figma</span>
-            <span>Express</span>
-            <span>Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
           </div>
         </div>
         <div className="skills" style={{ "--time": "15s" }}>
           <div>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>Figma</span>
-            <span>MongoDB</span>
-            <span>NextJs</span>
-            <span>Figma</span>
-            <span>Express</span>
-            <span>Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
           </div>
           <div>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>Figma</span>
-            <span>MongoDB</span>
-            <span>NextJs</span>
-            <span>Figma</span>
-            <span>Express</span>
-            <span>Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
           </div>
         </div>
         <div className="skills" style={{ "--time": "20s" }}>
           <div>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>Figma</span>
-            <span>MongoDB</span>
-            <span>NextJs</span>
-            <span>Figma</span>
-            <span>Express</span>
-            <span>Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
           </div>
           <div>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>Figma</span>
-            <span>MongoDB</span>
-            <span>NextJs</span>
-            <span>Figma</span>
-            <span>Express</span>
-            <span>Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
           </div>
         </div>
         <div className="skills" style={{ "--time": "30s" }}>
           <div>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>Figma</span>
-            <span>MongoDB</span>
-            <span>NextJs</span>
-            <span>Figma</span>
-            <span>Express</span>
-            <span>Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
           </div>
           <div>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>Figma</span>
-            <span>MongoDB</span>
-            <span>NextJs</span>
-            <span>Figma</span>
-            <span>Express</span>
-            <span>Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
           </div>
         </div>
         <div className="skills" style={{ "--time": "25s" }}>
           <div>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>Figma</span>
-            <span>MongoDB</span>
-            <span>NextJs</span>
-            <span>Figma</span>
-            <span>Express</span>
-            <span>Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
           </div>
           <div>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>Figma</span>
-            <span>MongoDB</span>
-            <span>NextJs</span>
-            <span>Figma</span>
-            <span>Express</span>
-            <span>Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
           </div>
         </div>
         <div className="skills" style={{ "--time": "40s" }}>
           <div>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>Figma</span>
-            <span>MongoDB</span>
-            <span>NextJs</span>
-            <span>Figma</span>
-            <span>Express</span>
-            <span>Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
           </div>
           <div>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>Figma</span>
-            <span>MongoDB</span>
-            <span>NextJs</span>
-            <span>Figma</span>
-            <span>Express</span>
-            <span>Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
+            <span className="bg-[#2196F3]">HTML</span>
+            <span className="bg-[#E91E63]">CSS</span>
+            <span className="bg-[#10CC52]">JavaScript</span>
+            <span className="bg-indigo-500">ReactJS</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-rose-500">MongoDB</span>
+            <span className="bg-[#333]">NextJs</span>
+            <span className="bg-orange-500">Figma</span>
+            <span className="bg-slate-500">Express</span>
+            <span className="bg-emerald-500">Node JS</span>
           </div>
         </div>
 

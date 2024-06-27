@@ -193,16 +193,10 @@ body::-webkit-scrollbar {
   display: inline-flex;
   margin: 10px;
   letter-spacing: 0.2em;
-  background: #333;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   transition: 0.5s;
-}
-
-.skills div span:hover {
-  background: #3fd2f9;
-  cursor: pointer;
 }
 
 .blog-content {
