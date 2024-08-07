@@ -13,7 +13,7 @@ const NavBar = () => {
         Abhishek Codes
       </Link>
       <div className="flex gap-4 text-xl pr-4">
-        <Link
+        {/* <Link
           href="/Abhishek Singh Senior Front End Developer Resume June 2024.pdf"
           target="_blank"
           className="flex"
@@ -23,9 +23,9 @@ const NavBar = () => {
             style={{ fontSize: 18 }}
           />
           Resume
-        </Link>
+        </Link> */}
         {/* <Link href="#about">About</Link> */}
-        <Link href="#work">Work</Link>
+        <Link href="/">Home</Link>
         <Link href="/blog">Blog</Link>
       </div>
     </div>

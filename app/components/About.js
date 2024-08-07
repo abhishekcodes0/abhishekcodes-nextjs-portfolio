@@ -15,7 +15,7 @@ const About = () => {
       >
         About Me
       </div>{" "}
-      <Paragraph value="Hi there! I'm Abhishek Singh, a front-end wizard with over four years of experience in conjuring up sleek, responsive web applications using React, Tailwind CSS, and a sprinkle of JavaScript magic. I love transforming complex challenges into user-friendly digital delights. When I'm not crafting code, you can find me sharing my coding adventures on my blog. Let's create something awesome together!" />{" "}
+      <Paragraph value="Hello! I'm Abhishek Singh, a seasoned Full-Stack Developer with five years of experience in crafting sleek, responsive web applications tailored to user needs. Skilled in React, Tailwind CSS, Next.js, Node.js, Express, and MongoDB, I excel at turning complex challenges into user-friendly solutions. Beyond coding, I enjoy sharing insights and stories from my coding journey on my blog. Eager to collaborate and create something impactful together! Let’s connect and explore how we can drive innovation." />{" "}
     </section>
   );
 };
