@@ -6,7 +6,7 @@ import Script from "next/script";
 export const metadata = {
   title: "Abhishek Codes",
   description:
-    "Passionate Front-End Developer with 4 Years of React.js Experience | Aspiring Full-Stack Developer, Ready to Take on New Challenges and Opportunities",
+    "Passionate Full-Stack Developer with 5+ years of experience, Ready to Take on New Challenges and Opportunities",
 };
 
 export default function RootLayout({ children }) {

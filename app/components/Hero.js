@@ -24,7 +24,7 @@ const Hero = () => {
           className="text-md text-gray-500 z-10 text-center font-semibold"
         >
           Combining Creativity and Technical Skill
-          <br /> to Develop Impactful Digital Solutions for 5 Years
+          <br /> to Develop Impactful Digital Solutions for 5+ Years
         </motion.h2>
       </div>
       <motion.div
