@@ -78,9 +78,9 @@ body::-webkit-scrollbar {
   position: absolute;
   top: 30%;
   left: 5%;
-  width: 400px;
-  height: 400px;
-  background: url("/abhishek-1.jpeg") no-repeat 50% 50%;
+  width: 350px;
+  height: 350px;
+  background: url("/desk.png") no-repeat 50% 50%;
   background-size: cover;
 }
 

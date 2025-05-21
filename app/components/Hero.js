@@ -48,8 +48,10 @@ const Hero = () => {
         animate={{ scale: 1, opacity: 100 }}
         transition={{ delay: 4, ease: "easeInOut" }}
         className="blob blob-1 text-white text-xs"
-      >
+      ><p style={{marginTop:'100px'}}>
+
         {"Hi, that's me"}
+      </p>
       </motion.div>
       <motion.div
         initial={{ scale: 0.5, opacity: 0 }}

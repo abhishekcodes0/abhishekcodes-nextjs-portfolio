@@ -26,6 +26,23 @@ const Work = () => {
         Work
       </div>{" "}
       <VerticalTimeline className="relative">
+      <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          // contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          date="2024 - 2025"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<CgWorkAlt />}
+          visible={true}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Senior FullStack Engineer
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            SAAF Finance Inc, NY, USA
+          </h4>
+          <p>React.js, Node.js, Serverless, Postgres</p>
+        </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           // contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
